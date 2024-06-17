@@ -1,7 +1,8 @@
 return {
-	"scottmckendry/cyberdream.nvim",
+	"rebelot/kanagawa.nvim",
 	priority = 1000,
 	config = function()
-		vim.cmd([[colorscheme cyberdream]])
+		vim.o.termguicolors = true
+		vim.cmd([[colorscheme kanagawa-dragon]])
 	end,
 }

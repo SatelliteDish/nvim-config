@@ -12,8 +12,4 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup("config.lazy_plugins",{
-	install = {
-		colorscheme = { "rose-pine" },
-	}
-})
+require("lazy").setup("config.lazy_plugins")
