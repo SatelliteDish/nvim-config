@@ -25,4 +25,3 @@ vim.keymap.set('n', '<C-j>', 'ddp')
 vim.keymap.set('n', '<C-Down>', 'ddp')
 
 vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
-vim.keymap.set('n', '<leader>ex', vim.cmd.Ex, {})
