@@ -29,6 +29,7 @@ return {
       }
     }
 
-    vim.keymap.set('n', '<c-n>', ':NvimTreeFindFileToggle<CR>')
+    vim.keymap.set('n', '<C-n>', ':NvimTreeFocus<CR>')
+    vim.keymap.set('n', '<S-n>', ':NvimTreeClose<CR>')
   end
 }
