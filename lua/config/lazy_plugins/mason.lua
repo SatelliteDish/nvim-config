@@ -19,7 +19,8 @@ return {
 
     local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
-    require("lspconfig").clangd.setup {
+
+    require("lspconfig").lua_ls.setup {
       capabilities = capabilities,
       settings = {
         Lua = {
@@ -28,6 +29,10 @@ return {
           }
         },
       },
+    }
+
+    require("lspconfig").clangd.setup {
+      capabilities = capabilities,
     }
 
     require("lspconfig").rust_analyzer.setup{
@@ -39,7 +44,7 @@ return {
     }
 
     require("lspconfig").tsserver.setup{
-      capabilities = capabilities
+      capabilities = capabilities,
     }
 
   end,
