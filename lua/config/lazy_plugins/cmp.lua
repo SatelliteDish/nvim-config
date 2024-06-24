@@ -27,7 +27,7 @@ return {
     vim.api.nvim_set_hl(0, 'CmpItemKindUnit', { link='CmpItemKindKeyword' })
 
     vim.api.nvim_set_hl(0, 'MyMenu', { bg='#16161D' })
-    
+
     cmp.setup({
       snippet = {
         expand = function(args)

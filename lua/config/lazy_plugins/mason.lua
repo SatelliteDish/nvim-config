@@ -13,7 +13,8 @@ return {
         "lua_ls",
         "rust_analyzer",
         "dockerls",
-        "tsserver"
+        "tsserver",
+        "pylsp"
       }
     })
 
@@ -45,6 +46,19 @@ return {
 
     require("lspconfig").tsserver.setup{
       capabilities = capabilities,
+    }
+
+    require'lspconfig'.pylsp.setup{
+      settings = {
+        pylsp = {
+          plugins = {
+            pycodestyle = {
+              ignore = {'W391'},
+              dockerlsmaxLineLength = 100
+            }
+          }
+        }
+      }
     }
 
   end,
