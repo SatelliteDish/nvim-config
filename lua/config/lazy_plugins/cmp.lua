@@ -1,12 +1,12 @@
 return {
-	"hrsh7th/nvim-cmp",	
+	"hrsh7th/nvim-cmp",
   dependencies = {
     "hrsh7th/cmp-nvim-lsp",
     "hrsh7th/cmp-buffer",
     "hrsh7th/cmp-path",
     "onsails/lspkind.nvim"
   },
-  config = function()  
+  config = function()
     local cmp = require("cmp")
     local lspkind = require("lspkind")
     -- gray
@@ -28,10 +28,12 @@ return {
 
     vim.api.nvim_set_hl(0, 'MyMenu', { bg='#16161D' })
 
+    require("luasnip.loaders.from_vscode").lazy_load();
+
     cmp.setup({
       snippet = {
         expand = function(args)
-          vim.fn["vsnip#anonymous"](args.body)
+          require('luasnip').lsp_expand(args.body)
         end,
       },
       formatting = {
@@ -47,7 +49,9 @@ return {
       sources = cmp.config.sources({
             { name = "nvim-lsp" },
         },{
-            { name = "vim-vsnip" },
+            { name = "luasnip" },
+        },{
+            { name = "rustacean" }
         },{
             { name = 'buffer' },
         }),

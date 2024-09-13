@@ -33,7 +33,8 @@ return {
 				"query",
 				"c",
 				"rust",
-				"c_sharp"
+				"c_sharp",
+        "go",
 			},
 			incremental_selection = {
 				enable = true,

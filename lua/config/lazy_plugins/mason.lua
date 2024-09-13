@@ -11,10 +11,10 @@ return {
       ensure_installed = {
         "clangd",
         "lua_ls",
-        "rust_analyzer",
         "dockerls",
         "tsserver",
-        "pylsp"
+        "pylsp",
+        "golangci_lint_ls",
       }
     })
 
@@ -36,10 +36,6 @@ return {
       capabilities = capabilities,
     }
 
-    require("lspconfig").rust_analyzer.setup{
-      capabilities = capabilities
-    }
-
     require("lspconfig").dockerls.setup{
       capabilities = capabilities 
     }
@@ -58,6 +54,20 @@ return {
             }
           }
         }
+      }
+    }
+
+    require('lspconfig').yamlls.setup {
+      -- other configuration for setup {}
+      settings = {
+        yaml = {
+          -- other settings. note this overrides the lspconfig defaults.
+          schemas = {
+            ["https://json.schemastore.org/github-workflow.json"] = "/.github/workflows/*",
+            ["../path/relative/to/file.yml"] = "/.github/workflows/*",
+            ["/path/from/root/of/project"] = "/.github/workflows/*",
+          },
+        },
       }
     }
 
