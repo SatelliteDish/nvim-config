@@ -35,6 +35,7 @@ return {
 				"rust",
 				"c_sharp",
         "go",
+        "haskell",
 			},
 			incremental_selection = {
 				enable = true,

@@ -12,9 +12,10 @@ return {
         "clangd",
         "lua_ls",
         "dockerls",
-        "tsserver",
+        "ts_ls",
         "pylsp",
         "golangci_lint_ls",
+        "rust_analyzer",
       }
     })
 
@@ -36,11 +37,26 @@ return {
       capabilities = capabilities,
     }
 
+    require'lspconfig'.rust_analyzer.setup{
+      capabilities = capabilities,
+      settings = {
+        ['rust-analyzer'] = {
+          diagnostics = {
+            enable = false;
+          }
+        }
+      }
+    }
+
+    require('lspconfig')['hls'].setup{
+      filetypes = { 'haskell', 'lhaskell', 'cabal' },
+    }
+
     require("lspconfig").dockerls.setup{
       capabilities = capabilities 
     }
 
-    require("lspconfig").tsserver.setup{
+    require("lspconfig").ts_ls.setup{
       capabilities = capabilities,
     }
 
@@ -54,20 +70,6 @@ return {
             }
           }
         }
-      }
-    }
-
-    require('lspconfig').yamlls.setup {
-      -- other configuration for setup {}
-      settings = {
-        yaml = {
-          -- other settings. note this overrides the lspconfig defaults.
-          schemas = {
-            ["https://json.schemastore.org/github-workflow.json"] = "/.github/workflows/*",
-            ["../path/relative/to/file.yml"] = "/.github/workflows/*",
-            ["/path/from/root/of/project"] = "/.github/workflows/*",
-          },
-        },
       }
     }
 

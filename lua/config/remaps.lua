@@ -30,6 +30,9 @@ vim.keymap.set('n', '<C-/>', 'mp0i//<C-c>`p')
 vim.keymap.set('n', '<leader> ', ':lua vim.diagnostic.open_float()<CR>')
 
 vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
+
+vim.keymap.set('n', '<leader>t', '<C-w>n:terminal<CR>A')
+
 -- Yank into system clipboard
 vim.keymap.set({'n', 'v'}, '<leader>y', '"+y') -- yank motion
 vim.keymap.set({'n', 'v'}, '<leader>Y', '"+Y') -- yank line
