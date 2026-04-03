@@ -1,5 +1,6 @@
 {
   "LuaSnip": { "branch": "master", "commit": "03c8e67eb7293c404845b3982db895d59c0d1538" },
+  "c-cpp-compile-run": { "branch": "master", "commit": "6638aa79afbdb89d7376679bdbba79097591b718" },
   "cmp-buffer": { "branch": "main", "commit": "3022dbc9166796b644a841a02de8dd1cc1d311fa" },
   "cmp-nvim-lsp": { "branch": "main", "commit": "99290b3ec1322070bcfb9e846450a46f6efa50f0" },
   "cmp-path": { "branch": "main", "commit": "91ff86cd9c29299a64f968ebb45846c485725f23" },
@@ -22,16 +23,22 @@
   "nvim-treesitter": { "branch": "master", "commit": "d34e62afd3e483fe0fa2f24b6323f3bb1d35ddcc" },
   "nvim-web-devicons": { "branch": "master", "commit": "5effc6fc1a55dd9db0d168d3d877d65826d26ad4" },
   "plenary.nvim": { "branch": "master", "commit": "3707cdb1e43f5cea73afb6037e6494e7ce847a66" },
+  "react-native-snippet": { "branch": "master", "commit": "3e5430e14915ac09d4f85166ed313d42d7266305" },
   "ripgrep": { "branch": "master", "commit": "e2362d4d5185d02fa857bf381e7bd52e66fafc73" },
+  "ruff": { "branch": "main", "commit": "ef3a195f28a0232cee39786ad9e374b651f404f9" },
   "telescope.nvim": { "branch": "master", "commit": "6312868392331c9c0f22725041f1ec2bef57c751" },
   "vim-commentary": { "branch": "master", "commit": "64a654ef4a20db1727938338310209b6a63f60c9" },
   "vim-vsnip": { "branch": "master", "commit": "02a8e79295c9733434aab4e0e2b8c4b7cea9f3a9" },
   "vim-vsnip-integ": { "branch": "master", "commit": "90ae474e8b05ed41e36d6f58382a9fbfb4b672c4" },
+  "vscode-c-cpp-runner": { "branch": "main", "commit": "820d8e6b0eaca2bcb5ea41d03ce6870346ed83be" },
   "vscode-cpp-snippets": { "branch": "master", "commit": "f481dcfe34ef410ce71f67500706a3043e81ca03" },
   "vscode-csharp": { "branch": "main", "commit": "fdd6f2b9537b0fd17f8dd341ed5f2a77f0a65bee" },
   "vscode-javascript": { "branch": "master", "commit": "ecfeba765ebdaff72b23e7a5d030e35c941a7c30" },
+  "vscode-lldb": { "branch": "master", "commit": "bc1fee16be7451cb0a4fe63dfad5476a1cd11d66" },
   "vscode-lua": { "branch": "master", "commit": "e3c21515a86148a149cbbd272a01bcf53feaf578" },
   "vscode-node-module-intellisense": { "branch": "master", "commit": "66014f21292ff6870d159fc39f5085250f5e355c" },
   "vscode-python-snippet-pack-2.0": { "branch": "master", "commit": "a37c28b71ba740e330554c7efeabc0909a0ce55c" },
-  "vscode-rust": { "branch": "master", "commit": "0c49e2bd1ba95ebdbfdf911e8ca609c2be096027" }
+  "vscode-react-typescript": { "branch": "master", "commit": "100fbb39a2207fc8cd6c4f99afd4773f5d83a7a4" },
+  "vscode-rust": { "branch": "master", "commit": "0c49e2bd1ba95ebdbfdf911e8ca609c2be096027" },
+  "vscode-tailwindcss": { "branch": "main", "commit": "3d3f866d268216885915217bb1c8054483cae353" }
 }

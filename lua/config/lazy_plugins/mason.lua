@@ -33,8 +33,10 @@ return {
       },
     }
 
-    require("lspconfig").clangd.setup {
-      capabilities = capabilities,
+    require('lspconfig').clangd.setup {
+        cmd = { "clangd", "--background-index" },
+        filetypes = { "c", "cpp" },
+        root_dir = vim.loop.cwd,
     }
 
     require'lspconfig'.rust_analyzer.setup{
