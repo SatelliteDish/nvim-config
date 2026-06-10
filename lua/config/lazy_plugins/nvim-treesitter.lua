@@ -12,8 +12,11 @@ return {
 				enable = true,
 			},
 			--enable indentation
-			indent = { enable = true },
-			
+			indent = {
+        enable = true,
+        disable = { "typescript", "tsx", "javascript" },
+      },
+
 			--ensure these language parsers are installed
 			ensure_installed = {
 				"json",

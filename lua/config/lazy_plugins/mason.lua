@@ -55,13 +55,28 @@ return {
     }
 
     require("lspconfig").dockerls.setup{
-      capabilities = capabilities 
+      capabilities = capabilities,
     }
 
     require("lspconfig").ts_ls.setup{
       capabilities = capabilities,
+      settings = {
+        typescript = {
+          format = {
+            indentSize = vim.o.shiftwidth,
+            convertTabsToSpaces = vim.o.expandtab,
+            tabSize = vim.o.shiftwidth,
+          },
+        },
+        javascript = {
+          format = {
+            indentSize = vim.o.shiftwidth,
+            convertTabsToSpaces = vim.o.expandtab,
+            tabSize = vim.o.shiftwidth,
+          },
+        },
+      },
     }
-
     require'lspconfig'.pylsp.setup{
       settings = {
         pylsp = {
